@@ -1,0 +1,109 @@
+body{
+    background-color: rgb(0, 0, 5);
+    color: white;
+}
+
+@keyframes salam {
+    0% {
+        transform: scale(.75);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+.salam {
+    margin: 100px auto;
+    color: rgb(89, 226, 10);
+    text-shadow: 5px 4px 15px rgb(104, 223, 110);
+    animation: salam 3s ease-in 0.5s infinite alternate;
+}
+.mid {
+    text-align: center;
+}
+.link-btn{
+    background-image: linear-gradient(red, rgb(41, 13, 168));
+    padding: 30px;
+    text-decoration: none;
+    color: rgb(121, 246, 255);
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 700;
+}
+.link{
+    display: flex;
+    justify-content: center;
+}
+.clr{
+    color: orange;
+}
+h1{
+    font-family: 'Lobster', cursive;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+}
+.fluid img{
+    width: 120px;
+}
+@keyframes slider1 {
+    0%{
+        top: 0;
+        right: 0;
+    }
+    50%{
+        top: 75vh;
+        right: 36vw;
+        transform: scale(1.5);
+    }
+    100%{
+        top: 0;
+        right: 91vw;
+    }
+}
+@keyframes slider2 {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    50%{
+        top: 75vh;
+        left: 36vw;
+        transform: scale(1.5);
+    }
+    100%{
+        top: 0;
+        left: 91vw;
+    }
+}
+#flu1{
+    animation: slider1 5s linear 0.5s infinite alternate;
+    position: absolute;
+}
+#flu2{
+    animation: slider2 5s linear 0.5s infinite alternate;
+    position: absolute;
+}
+@keyframes light {
+    0% {
+        box-shadow: 10px 10px 60px orange;
+    }
+    25%{
+        box-shadow: 10px 10px 60px rgb(255, 30, 0);
+    }
+    50%{
+        box-shadow: 10px 10px 60px rgb(0, 204, 255);
+    }
+    75%{
+        box-shadow: 10px 10px 60px rgb(225, 0, 255);
+    }
+
+    100% {
+        box-shadow: 10px 10px 60px greenyellow;
+    }
+}
+
+.fluid img{
+    animation: light 2s linear 0.5s infinite alternate;
+    border-radius: 10px;
+}
